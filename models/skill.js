@@ -1,10 +1,10 @@
 const skills = [
-    {id: 23131, skill: 'HTML', mastered: true},
-    {id: 64537, skill: 'CSS', mastered: false},
-    {id: 84938, skill: 'Javascript', mastered: false},
-    {id: 65635, skill: 'Git', mastered: false},
-    {id: 89324, skill: 'Node.js', mastered: false},
-    {id: 13422, skill: 'Express.js', mastered: false},
+    {id: 23131, img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png', skill: 'HTML', mastered: true},
+    {id: 64537, img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png', skill: 'CSS', mastered: false},
+    {id: 84938, img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png', skill: 'Javascript', mastered: false},
+    {id: 65635, img: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png', skill: 'Git', mastered: false},
+    {id: 89324, img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png', skill: 'Node.js', mastered: false},
+    {id: 13422, img: 'https://expressjs.com/images/express-facebook-share.png', skill: 'Express.js', mastered: false},
   ];
 	
   module.exports = {
