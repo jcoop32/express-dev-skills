@@ -12,7 +12,6 @@ const skills = [
     getOne,
     create,
     deleteOne,
-
   };
 	
   function getAll() {
@@ -28,12 +27,16 @@ const skills = [
   }
 
   function create(skill){
+    //gives a 5 digit id based on time
     skill.id = Date.now() % 100000;
+    //sets mastered to false by default
     skill.mastered = false;
+    //pushes new skill into array
     skills.push(skill);
   }
 
   function deleteOne(id){
+    //takes in id of skill object
     id = parseInt(id);
     //finds index of id passed through
     const idx = skills.findIndex(skill => skill.id === id);
