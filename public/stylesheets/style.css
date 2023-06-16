@@ -10,3 +10,15 @@ a {
 .logo{
   width: 250px;
 }
+.delete-form {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.delete-form button {
+  color: red;
+}
+	
+li {
+  list-style: none;
+}

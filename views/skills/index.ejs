@@ -3,6 +3,9 @@
     <h1>Skills: </h1>
     <% for(let i=0; i < skills.length; i++){%>
         <li>
+            <form action="/skills/<%=skills[i].id%>?_method=DELETE" method="POST" class="delete-form">
+                <button type="submit">X</button>
+            </form>
             <a href="/skills/<%=skills[i].id%>"><%=skills[i].skill%></a>
         </li>
     <%}%>

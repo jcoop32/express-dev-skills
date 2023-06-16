@@ -1,5 +1,5 @@
 const skills = [
-    {id: 23131, img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png', skill: 'HTML', mastered: true},
+    {id: 23131, img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png', skill: 'HTML', mastered: false},
     {id: 64537, img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png', skill: 'CSS', mastered: false},
     {id: 84938, img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png', skill: 'Javascript', mastered: false},
     {id: 65635, img: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png', skill: 'Git', mastered: false},
@@ -11,6 +11,8 @@ const skills = [
     getAll,
     getOne,
     create,
+    deleteOne,
+
   };
 	
   function getAll() {
@@ -29,4 +31,11 @@ const skills = [
     skill.id = Date.now() % 100000;
     skill.mastered = false;
     skills.push(skill);
+  }
+
+  function deleteOne(id){
+    id = parseInt(id);
+    //finds index of id passed through
+    const idx = skills.findIndex(skill => skill.id === id);
+    skills.splice(idx, 1)
   }
