@@ -10,6 +10,7 @@ const skills = [
   module.exports = {
     getAll,
     getOne,
+    create,
   };
 	
   function getAll() {
@@ -22,4 +23,10 @@ const skills = [
     //the Array.prototype.find iterator method is 
     //ideal for finding objs within an array
     return skills.find(todo => todo.id === id)
+  }
+
+  function create(skill){
+    skill.id = Date.now() % 100000;
+    skill.mastered = false;
+    skills.push(skill);
   }
